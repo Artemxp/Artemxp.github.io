@@ -60,9 +60,9 @@ $(function () {
     function resizeIframe(){
         $('iframe').each(function() {
             var width = $(this).width ();
-            $(this).css("height", width / 2.0777 + "px");
+            $(this).css("height", width / 1.9777 + "px");
         });
     };
-    $(window).resize(resizeIframe);
+
 
 });

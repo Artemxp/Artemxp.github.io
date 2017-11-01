@@ -2,10 +2,12 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 html, body{
     font-family: OpenSans, Arial, sans-serif;
     font-size: 13px;
+
 
 }
 @font-face{
@@ -25,7 +27,8 @@ html, body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height:100%;
+    min-height: 100%;
+
 
 }
 .overlay{
@@ -48,7 +51,7 @@ html, body{
     border-radius: 10px;
     background: #fff;
     color: #14171a;
-    margin: 30px 5px 0 1px;
+    margin: 30px 10px 0 2px;
 }
 .call-me{
     margin: 20px;
@@ -205,8 +208,9 @@ header::before{
 .content{
     width:100%;
     text-align: center;
-    
     flex:1 0 auto;
+    box-sizing:border-box;
+    padding:0;
 
 }
 .content h1{
@@ -241,15 +245,50 @@ header::before{
     padding-top: 10%;
     border: 1px solid #14171a;
 }
+.wrapper-multiple-items{
+      max-width: 1024px;
+      margin: 0 auto;
+}
 .multiple-items{
-    max-width: 1024px;
-    margin: 0 auto;
+    position: relative;
+
+
+    box-sizing: content-box;
+}
+.slick-arrow{
+    position: absolute;
+    top:50%;
+    margin-top: -25px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 33px;
+    border: none;
+    outline: none;
+    color: rgba(0,0,0,0);
+    transition: opacity 0.2s ease-out;
+
+}
+.slick-arrow:hover{
+    opacity: 0.6;
+}
+.slick-next{
+    right: 15px;
+    background: url(img/next.png) center no-repeat;
+    background-size: 50px;
+}
+.slick-prev{
+    z-index: 999;
+    left: 15px;
+    background: url(img/prev.png) center no-repeat;
+    background-size: 50px;
 }
 .wrapper-content{
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 30px;
-    overflow: hidden;
+
+
 }
 .row{
 
@@ -397,6 +436,7 @@ header::before{
     text-align: left;
 }
 footer{
+    flex: none;
     padding: 10px;
     background: #2d2d2d;
     color: #fff;
