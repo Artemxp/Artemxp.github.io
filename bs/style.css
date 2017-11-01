@@ -36,21 +36,20 @@ html, body{
     top: 0;
     cursor: pointer;
     display: none;
+
 }
 .popup-modal{
     display: none;
+    max-width: 1024px;
     position: fixed;
     z-index: 121;
     border-radius: 10px;
     background: #fff;
     color: #14171a;
-    margin-top: 30px;
-    padding: 20px;
-
-
-
+    margin: 30px 5px 0 1px;
 }
 .call-me{
+    margin: 20px;
     text-align: center;
     color: rgb(84, 84, 84);
 }
@@ -68,6 +67,10 @@ html, body{
     font-size: 18px;
     margin-left: 20px;
 }
+.wrapper-call-me{
+    display: none;
+}
+
 .form-call-me input{
     border: 1px solid #e6ecf0;
     border-radius: 4px;
@@ -85,6 +88,9 @@ html, body{
     outline: none;
     cursor: pointer;
     transition: 0.5s;
+}
+.wrapper-player{
+    display: none;
 }
 .player{
 
@@ -201,7 +207,7 @@ header::before{
 
 }
 .content h1{
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 30px;
 }
 .portfolio{
@@ -225,11 +231,19 @@ header::before{
     border-top: 2px solid #000;
     transition: .15s ease-in-out;
 }
+.item1{
+
+    position: relative;
+    margin: 5px;
+    padding-top: 10%;
+    border: 1px solid #14171a;
+}
 
 .wrapper-content{
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 30px;
+    overflow: hidden;
 }
 .row{
 
