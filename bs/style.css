@@ -273,13 +273,13 @@ header::before{
     opacity: 0.6;
 }
 .slick-next{
-    right: 15px;
+    right: -55px;
     background: url(img/next.png) center no-repeat;
     background-size: 50px;
 }
 .slick-prev{
     z-index: 999;
-    left: 15px;
+    left: -55px;
     background: url(img/prev.png) center no-repeat;
     background-size: 50px;
 }
